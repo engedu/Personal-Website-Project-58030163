@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    background: grey;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    height: 100%;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    width: 100%;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Menu styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 10px;
+    font-size: 28px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: salmon;
+    font-weight: bold;
+}
+
+/* Main */
+h3 {
+    word-break: break-all;
+    font-family: 'Comfortaa', cursive;
+    font-size: 34px;
+    letter-spacing: 3px;
+    color: salmon;
+    text-shadow: white 3px 3px 3px;
+    padding: 0;
+    margin: 15px 20px;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    line-height: 1.5;
+    color: black;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive Flex styles */
+@media screen and (max-width: 820px) {
+    h1{
+        font-size: 46px;
+    }
+    .nav a{
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    /* Responsive layout - makes the two columns stack on top */
+    .column {
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    nav a{
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    p {
+        font-size: 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1{
+        font-size: 35px;
+    }
+    nav a{
+        font-size: 21px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        background-color: lightgrey;
+    }
+    h1{
+        font-size: 32px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 28px;
+    }
+}
